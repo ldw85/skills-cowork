@@ -1,0 +1,43 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+  border-bottom: 1px solid #f0f0f0;
+  user-select: none;
+}
+
+.top-bar-left,
+.top-bar-center,
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .top-bar {
+  background: #141414;
+  border-bottom-color: #303030;
+}
+
+[data-theme='dark'] .app-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .ant-btn {
+  color: #d9d9d9 !important;
+}
+
+[data-theme='dark'] .ant-btn:hover {
+  color: #ffffff !important;
+}

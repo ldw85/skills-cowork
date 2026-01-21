@@ -1,0 +1,187 @@
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+  border-bottom: 1px solid #f0f0f0;
+  user-select: none;
+}
+
+.top-bar-left,
+.top-bar-center,
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+}
+
+.sidebar .ant-tabs-nav {
+  margin-bottom: 0;
+}
+
+.sidebar .ant-tabs-content-holder {
+  height: calc(100% - 46px);
+}
+
+.sidebar .ant-tabs-tabpane {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Editor Panel */
+.editor-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-panel .ant-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.editor-panel .ant-tabs-content {
+  flex: 1;
+  height: 100%;
+}
+
+.editor-panel .ant-tabs-tabpane {
+  height: 100%;
+}
+
+/* Chat Panel */
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.chat-input-area {
+  padding: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.chat-input-area .ant-space-compact {
+  width: 100%;
+  display: flex;
+}
+
+.chat-input-area .ant-input {
+  flex: 1;
+  resize: none;
+  border-radius: 0;
+}
+
+.chat-input-area .ant-btn-primary {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-input-hint {
+  font-size: 11px;
+  color: #8c8c8c;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Dark theme */
+[data-theme='dark'] .top-bar {
+  background: #141414;
+  border-bottom-color: #303030;
+}
+
+[data-theme='dark'] .app-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .ant-btn {
+  color: #d9d9d9;
+}
+
+[data-theme='dark'] .ant-btn:hover {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .sidebar {
+  background: #1f1f1f;
+}
+
+[data-theme='dark'] .editor-panel {
+  background: #1f1f1f;
+}
+
+[data-theme='dark'] .chat-panel {
+  background: #141414;
+}
+
+[data-theme='dark'] .chat-input-area {
+  border-top-color: #303030;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: #434343;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: #595959;
+}
+
+/* Light theme */
+[data-theme='light'] .top-bar {
+  background: #ffffff;
+}
+
+[data-theme='light'] .app-title {
+  color: #000000;
+}
+
+[data-theme='light'] .sidebar {
+  background: #fafafa;
+}
+
+[data-theme='light'] .editor-panel {
+  background: #ffffff;
+}
+
+[data-theme='light'] .chat-panel {
+  background: #ffffff;
+}
+
+[data-theme='light'] ::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+[data-theme='light'] ::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+}
+
+[data-theme='light'] ::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}
