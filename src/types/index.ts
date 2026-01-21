@@ -1,32 +1,17 @@
+// Export all types from their respective modules
+export * from './chat';
+export * from './editor';
+export * from './file';
+export * from './skills';
+export * from './config';
+
+// Legacy types for backward compatibility
 export interface FileNode {
   key: string
   title: string
   isLeaf?: boolean
   children?: FileNode[]
   icon?: React.ReactNode
-}
-
-export interface Skill {
-  id: string
-  name: string
-  description: string
-  category?: string
-  icon?: string
-}
-
-export interface SkillPack {
-  id: string
-  name: string
-  version: string
-  description: string
-  skills: string[]
-}
-
-export interface ChatMessage {
-  id: string
-  role: 'user' | 'assistant'
-  content: string
-  timestamp: Date
 }
 
 export interface EditorTab {
